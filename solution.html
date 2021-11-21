@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>My favorite math problem</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"
+    ></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ],
+          displayMath: [
+            ["$$", "$$"],
+            ["\[", "\]"],
+          ],
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <p><b>Solution:</b> No.</p>
+    <p>
+      Both $2 \times 1$ and $1 \times 2$ blocks cover adjacent squares. Adjacent
+      squares are always dark and light. Thus any configuration of blocks covers
+      an equal number of light and dark squares.
+    </p>
+
+    <p>
+      In board $B$, there are $30$ dark squares and $32$ light squares. Assume
+      that there is a configuration of blocks that covers board $B$: this
+      configuration of blocks covers a different number of light and dark
+      squares. A contradiction.
+    </p>
+
+    <p>
+      This is known as the
+      <a href="https://en.wikipedia.org/wiki/Mutilated_chessboard_problem"
+        >mutilated chessboard problem</a
+      >
+      and belongs to
+      <a href="https://en.wikipedia.org/wiki/Combinatorics">combinatorics</a>, a
+      field of math that typically studies various counts and configurations of
+      finite structures.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+body {
+  max-width: 800px;
+}
+
+.chess-board {
+  border-spacing: 0;
+  margin: 20px;
+}
+.chess-board th {
+  padding: 0.5em;
+}
+.chess-board td {
+  border: 0px solid;
+  width: 30px;
+  height: 20px;
+  min-width: 30px;
+  min-height: 30px;
+}
+.chess-board .light {
+  background: rgb(162, 255, 246);
+}
+.chess-board .dark {
+  background: #000;
+}
+.chess-board .red {
+  background: red;
+}
+.float-left {
+  float: left;
+}
+.margin-right {
+  margin-right: 100px;
+}
+.text-center {
+  text-align: center;
+}
+.clear-left {
+  clear: left;
+}
